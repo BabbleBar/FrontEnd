@@ -48,18 +48,25 @@ function initialize() {
 function fetch_data(){
 	$.getJSON("./query-data.php", function(data){
 		$.each(data, function(key, val){
+			var lvl = 0;
 			var r_lat = parseFloat(val.lat+"");
 			var r_long = parseFloat(val.long+"");
-			var marker = new google.maps.Marker({
-				position: { lat: r_lat , lng: r_long },
-				map: map,
-				/* icon: image, */
-				title: val.name+" "+val.id,
-			});
-		
 			var vid = val.id;
 			
 			if(spl[vid] != null){
+			    if(spl[vid]["spl"] > 65){
+				    lvl = 1;
+			    }if(spl[vid]["spl"] > 80){
+				    lvl = 2;
+			    }
+
+			    var marker = new google.maps.Marker({
+				    position: { lat: r_lat , lng: r_long },
+				    map: map,
+				    icon: "./lvl_"+lvl+".png",
+				    title: val.name+" "+val.id,
+			    });
+		    
 				var infowindow = new google.maps.InfoWindow({
 					content: val.name + "<br>" + spl[vid]["spl"]+" dB"
 				});
