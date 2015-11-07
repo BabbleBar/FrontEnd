@@ -41,6 +41,8 @@ function fetch_data(){
 			});
 		
 			var vid = val.id;
+
+			console.log(spl);
 			
 			if(spl[vid] != null){
 				var infowindow = new google.maps.InfoWindow({
