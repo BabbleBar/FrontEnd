@@ -2,7 +2,7 @@
 
 include_once("./inc/helper.php");
 
-header("Content-Type", "text/plain");
+header("Content-Type: text/plain");
 
 $stations = file_get_contents("./data/stations.txt");
 
