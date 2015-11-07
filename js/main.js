@@ -44,7 +44,7 @@ function fetch_data(){
 			
 			if(spl[vid] != null){
 				var infowindow = new google.maps.InfoWindow({
-					content: val.name + "<br>" + spl[vid]["spl"]+" dB"
+					content: val.name + "<br>" + spl[0]["avg"]+" dB"
 				});
 
 				marker.addListener("click", function(){
