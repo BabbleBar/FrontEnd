@@ -1,0 +1,12 @@
+language: php
+php: 5.6.4
+install: 
+script:
+deploy:
+  provider: cloudfoundry
+  api: https://api.lyra-836.appcloud.swisscom.com
+  username: michael.voser@gmail.com
+  password:
+    secure: fmHdQkzs9gt6+rHwSL/+wxf06Me2xa0w/ecOqODr1jjYTfqbAcuF0QRPRqoPhTB6NXRcS4EJf3gyxXHa2Vlh3YfXRhkCWt6ShjZKgK66VtujZ0khGIeTTM2z4X1cuQj6iFucV7fo6DOyXe+8v9dzJjA1VGBa2iCzdq8M9UeMAhtVaayfh4STk3WVkF1vma78vycjbncdFPpagjskoHTzr5Yy7sFGkZ+UGfF9QuNZoQUru4k/+ywp3t9m9Or3+0qCgXxb3PD1pRXHoHielB46XC9pcQAwQkIoDjSGBQlknb51dfNs6XkVNMh2v8g7IBganmW9RvhmWNMDJWMNYm7aVsIaxIR/tdaoAIuXQGlnG9B/OV1vNdb22wqVFFtByRbProvRVtXrY/V9BBhusSCtR5od4Vzm7mj8p37VvFQ1KzQAe7+ieoBGKXPh1IjezrGgwJRs/uhyCoBIT1Q+YR+EX4A5ivFOawAkPYHg11XR/Gavzn4GyrWHFH6M6RAAz4thWOsPKaRko8DyVOlr60GXLF90Ictr/oWpSLE/pvBV9bQsDxebMCBSjO9PO9QuyketNZsm8EZ9Z7eHKHLOnEGrGh6m6Cv+1OyF8PZ54lKTNRLj8bFIqb+35pi4vJ1Z2sh/p0V+j9Ygt56j0CpoQYHGWOTxie2ffdyGCt/lBTPdExc=
+  organization: BabbleBar
+  space: DEV
