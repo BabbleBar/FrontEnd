@@ -1,7 +1,5 @@
 language: php
 php: 5.6
-install: 
-script:
 deploy:
   provider: cloudfoundry
   api: https://api.lyra-836.appcloud.swisscom.com
