@@ -42,7 +42,7 @@ session_start();
 </div>
 <div class="row">
     <div class="center">
-	<a class="waves-effect waves-light btn" id="login"><i class="material-icons right">input</i>login</a>
+	<a class="waves-effect waves-light btn" id="login" style="font-size: 12px"><i class="material-icons right">input</i>login</a>
     </div>
 </div>
 <div class="row">
