@@ -210,7 +210,7 @@ $res = fetch_data();
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
 <script type="text/javascript">
-	var spl = <?php echo json_encode($res)?>
+	var spl = <?php echo json_encode($res)?>;
 </script>
   <script src="js/init.js"></script>
 
