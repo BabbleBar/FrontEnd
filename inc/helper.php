@@ -75,7 +75,20 @@ function fetch_data(){
     $context  = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
 
-    echo $result;
+    $json = json_decode($result, true);
+    $ret = array();
+    foreach($json as $station){
+	$d = array(
+		"max" => $station["max"],
+		"min" => $station["min"],
+		"spl" => $station["avg"],
+		"count" => $station["count"],
+		"date" => $station["last_timestamp"]["\$date"]
+	);
+	$ret[$station["_id"]] = $d;
+	}
+
+    return $ret;
 
 }
 

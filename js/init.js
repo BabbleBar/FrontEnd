@@ -46,6 +46,13 @@ function initialize() {
 }
 
 function fetch_data(){
+
+/*
+	$.getJSON("http://blogger.scapp.io/type/lum/avg/minutes/30", function(data){
+		console.log(data);	
+	});
+
+*/
 	$.getJSON("./query-data.php", function(data){
 		$.each(data, function(key, val){
 			var lvl = 0;
@@ -53,15 +60,14 @@ function fetch_data(){
 			var r_long = parseFloat(val.long+"");
 			var vid = val.id;
 
-			console.log(spl);
 
-
-//			if(spl[vid] != null){
-//			    if(spl[vid]["spl"] > 65){
-//				    lvl = 1;
-//			    }if(spl[vid]["spl"] > 80){
-//				    lvl = 2;
-//			    }
+			if(spl[vid] != null){
+			    console.log("OK");
+			    if(spl[vid]["spl"] > 65){
+				    lvl = 1;
+			    }if(spl[vid]["spl"] > 80){
+				    lvl = 2;
+			    }
 
 			    var marker = new google.maps.Marker({
 				    position: { lat: r_lat , lng: r_long },
@@ -71,14 +77,14 @@ function fetch_data(){
 			    });
 		    
 				var infowindow = new google.maps.InfoWindow({
-					content: val.name + "<br>" + spl[0]["avg"]+" dB"
+					content: val.name + "<br>" + spl[vid]["spl"]+" dB"
 				});
 
 				marker.addListener("click", function(){
 					infowindow.open(map, marker);
 				});
-					
 			}
+					
 		});
 	});
 }
