@@ -52,7 +52,10 @@ function fetch_data(){
 			var r_lat = parseFloat(val.lat+"");
 			var r_long = parseFloat(val.long+"");
 			var vid = val.id;
-			
+
+			console.log(spl);
+
+
 //			if(spl[vid] != null){
 //			    if(spl[vid]["spl"] > 65){
 //				    lvl = 1;
