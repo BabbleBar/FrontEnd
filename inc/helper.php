@@ -63,7 +63,7 @@ function err($message, $code){
 
 function fetch_data(){
 
-    $url = "http://blogger.scapp.io/type/lum/avg/minutes/30";
+    $url = "http://blogger.scapp.io/type/lum/avg/minutes/3";
 
     // use key 'http' even if you send the request to https://...
     $options = array(

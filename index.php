@@ -11,7 +11,7 @@ $res = fetch_data();
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Babblebar - The noise heatmap for your favorite places</title>
+  <title>Babble Bar - The ambient sound heatmap for your favorite places</title>
   <link href='https://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
   <!-- CSS  -->
@@ -64,7 +64,7 @@ $res = fetch_data();
       <div class="container">
         <br><br>
         <div class="row center">
-          <h2 class="header col s12 light">The ultimate guide to find your bar by noise level.</h2>
+          <h2 class="header col s12 light">The ultimate guide to find your bar by ambient sound level.</h2>
         </div>
         <div class="row center">
           <a href="#map" id="download-button" class="btn-large waves-effect waves-light blue accent-4">Get Started</a>
@@ -84,7 +84,7 @@ $res = fetch_data();
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center blue-text accent-4"><i class="material-icons">flash_on</i></h2>
+            <h2 class="center blue-text accent-4"><img src="./lvl_2.png"></img></h2>
             <h3 class="center">The Party Place</h3>
 
             <p class="light">Enjoy good music with your friends? Follow the party place symbol on the map and dance throught the night into the morning!
@@ -93,7 +93,7 @@ $res = fetch_data();
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center blue-text accent-4"><i class="material-icons">group</i></h2>
+            <h2 class="center blue-text accent-4"><img src="./lvl_1.png"></img></h2>
             <h3 class="center">Quiet but not too quiet?</h3>
 
             <p class="light">Do you enjoy good music but also like to have a chat with your friends? The socialize symbol indicates the right bar for you!</p>
@@ -102,7 +102,7 @@ $res = fetch_data();
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center blue-text accent-4"><i class="material-icons">settings</i></h2>
+            <h2 class="center blue-text accent-4"><img src="./lvl_0.png"></img></h2>
             <h3 class="center">Loving it more quiet?</h3>
 
             <p class="light">If you like to enjoy more quiet suroundings and have some conversations with your friends then the ambiente symbols guides you to the best place in town.</p>
@@ -127,8 +127,7 @@ $res = fetch_data();
 
 <div style="width: 100%: text-align: center">
 <div class="center">
-<h2><i class="mdi-content-send blue-text accent-5"></i></h2>
-<h3>The Map</h3>
+<h3><i class="medium material-icons blue-text accent-5">map</i>The Map</h3>
 </div>
 
 <div id="map" style="width: 100%; padding: 0px; height: 600px;"></div>
@@ -140,16 +139,16 @@ $res = fetch_data();
     <div class="section" id="device">
       <!--   Icon Section   -->
       <div class="row center">
-	<h3 class="col s12">The Device</h3>
+<h3><i class="medium material-icons blue-text accent-5">speaker_phone</i>The Device</h3>
       </div>
 
       <div class="row">
 	<div class="col s12 m4" >
-	<img style="margin: 0px auto; width: 100%;" src="./logo_web.png"></img>
+	<img style="margin: 0px auto; width: 100%;" src="./mock.png"></img>
 	</div>
 	<div class="col s12 m8">
 	<p>
-	 The <span class="blue-text accent-4">Babble Bar Pad</span> is a device which records the noise level in the bar and sends the calculated and processed data periodically back to the internet using LoRa low power wireless technology.<br><br>Thanks to the computing technology of the low power micro controller enabling the device, advanced audio calculation and prediction can be performed.<br><br> This allows the users to anticipate how loud or quiet your bar is going to be using a forecast.<br><br>The <span class="blue-text accent-4">Babble Bar Pad</span> is a seamless device using only minimal power allowing it to be extremely tiny and lasting over 1 year on one single battery charge.<br><br>
+	 The <span class="blue-text accent-4">Babble Bar Pad</span> is a device which records the ambient sound level in the bar and sends the calculated and processed data periodically back to the internet using LoRa low power wireless technology.<br><br>Thanks to the computing technology of the low power micro controller enabling the device, advanced audio calculation and prediction can be performed.<br><br> This allows the users to anticipate how loud or quiet your bar is going to be using a forecast.<br><br>The <span class="blue-text accent-4">Babble Bar Pad</span> is a seamless device using only minimal power allowing it to be extremely tiny and lasting over 1 year on one single battery charge.<br><br>
 	</p>
 	</div>
       </div>
@@ -161,7 +160,7 @@ $res = fetch_data();
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h2 class="header col s12 light">Follow us on Facebook and tell your friends!</h2>
+          <h2 class="header col s12 light">Swisscom Technology Enabled</h2>
         </div>
       </div>
     </div>
