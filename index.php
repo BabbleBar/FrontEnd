@@ -87,7 +87,7 @@ $res = fetch_data();
             <h2 class="center blue-text accent-4"><img src="./lvl_2.png"></img></h2>
             <h3 class="center">The Party Place</h3>
 
-            <p class="light">Enjoy good music with your friends? Follow the party place symbol on the map and dance throught the night into the morning!
+            <p class="light">Enjoy good music with your friends? Follow the above symbol on the map and have a good time partying!
           </div>
         </div>
 
@@ -96,7 +96,7 @@ $res = fetch_data();
             <h2 class="center blue-text accent-4"><img src="./lvl_1.png"></img></h2>
             <h3 class="center">Quiet but not too quiet?</h3>
 
-            <p class="light">Do you enjoy good music but also like to have a chat with your friends? The socialize symbol indicates the right bar for you!</p>
+            <p class="light">Do you enjoy good music but also like to have a chat with your friends without raising your voice too much? The medium symbol indicates the right place for you!</p>
           </div>
         </div>
 
@@ -105,7 +105,7 @@ $res = fetch_data();
             <h2 class="center blue-text accent-4"><img src="./lvl_0.png"></img></h2>
             <h3 class="center">Loving it more quiet?</h3>
 
-            <p class="light">If you like to enjoy more quiet suroundings and have some conversations with your friends then the ambiente symbols guides you to the best place in town.</p>
+            <p class="light">If you like to enjoy more quiet ambiente and have some conversations with your friends then the above symbols guides you to the best place for you in town.</p>
           </div>
         </div>
       </div>
@@ -179,11 +179,8 @@ $res = fetch_data();
         <div class="col l3 s12">
           <h3 class="white-text">Links</h3>
           <ul>
-            <li><a class="white-text" href="#!">Materialize CSS</a></li>
-            <li><a class="white-text" href="#!">Swisscom IoT Hackathon</a></li>
-            <li><a class="white-text" href="#!">Lora Alliance</a></li>
-            <li><a class="white-text" href="#!">ST Electronics</a></li>
-            <li><a class="white-text" href="#!">Semtec Semiconductors</a></li>
+            <li><a class="white-text" href="http://iot-hackathon.swisscom.com/">Swisscom IoT Hackathon</a></li>
+            <li><a class="white-text" href="https://www.swisscom.ch/en/business/enterprise/offer/cloud-data-center-services/paas/application-cloud.html">Powered by Swisscom Application Cloud</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
@@ -204,16 +201,15 @@ $res = fetch_data();
   </footer>
 
 
-  <!--  Scripts-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!--  Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
-<script type="text/javascript">
-	var spl = <?php echo json_encode($res) ?>;
-</script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		var spl = <?php echo json_encode($res) ?>;
+	</script>
   <script src="js/init.js"></script>
-
   </body>
 </html>
 

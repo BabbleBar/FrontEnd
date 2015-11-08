@@ -81,7 +81,7 @@ function fetch_data(){
 	$d = array(
 		"max" => $station["max"],
 		"min" => $station["min"],
-		"spl" => $station["avg"],
+		"spl" => number_format($station["avg"], 1),
 		"count" => $station["count"],
 		"date" => $station["last_timestamp"]["\$date"]
 	);
